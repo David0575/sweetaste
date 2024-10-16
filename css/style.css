@@ -1,0 +1,100 @@
+/*首頁BN區*/
+.index_bn_area .index__bn_banner {
+    background-image: url('../images/photo-01.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.index_bn_area .index_bn_itemgp {
+    padding: 0% 80px;
+    margin: -100px auto 80px;
+    display: flex;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item {
+    width: 100%;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(1) {
+    background: linear-gradient(rgba(63, 93, 69, 0.5), rgba(63, 93, 69, 0.8)), url('../images/photo-02.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(2) {
+    background: linear-gradient(rgba(63, 93, 69, 0.5), rgba(63, 93, 69, 0.8)), url('../images/photo-03.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(3) {
+    background: linear-gradient(rgba(63, 93, 69, 0.5), rgba(63, 93, 69, 0.8)), url('../images/photo-04.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item a {
+    display:flex;
+    width: 100%;
+    min-height: 256px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item a span {
+    text-align: center;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(1):hover {
+    background: linear-gradient(rgba(255, 225, 128, 0.5), rgba(255, 225, 128, 0.8)), url('../images/photo-02.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(2):hover {
+    background: linear-gradient(rgba(255, 225, 128, 0.5), rgba(255, 225, 128, 0.8)), url('../images/photo-03.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:nth-child(3):hover {
+    background: linear-gradient(rgba(255, 225, 128, 0.5), rgba(255, 225, 128, 0.8)), url('../images/photo-04.jpg') 50% 50% / cover no-repeat;
+}
+.index_bn_area .index_bn_itemgp .index_bn_item:hover a span {
+    color: #3F5D45;
+}
+
+/*主要區塊*/
+section.index_mainarea {
+    background-color: #EAF0ED;
+    max-height: 420px;
+}
+section.index_mainarea .container {
+    
+}
+section.index_mainarea .container .mainarea01 {
+    order: 03;
+}
+section.index_mainarea .container .mainarea02 {
+    order: 01;
+}
+section.index_mainarea .container .mainarea03 {
+    order: 02;
+}
+section.index_mainarea .container .mainarea01 {
+    margin-top: -20px;
+}
+section.index_mainarea .container .mainarea02 .imgbox {
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -20px;
+}
+section.index_mainarea .container .mainarea02 .imgbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.index_mainarea .container .mainarea03 {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-align: right;
+    font-size: 16px;
+    color: #8DA291;
+    padding: 70px 0px;
+    height: 420px;
+    line-height: 3em;
+}

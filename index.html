@@ -18,29 +18,83 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-all-dark.svg" alt="甜點電商" width="230px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="index_bn_area">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="./images/logo-all-dark.svg" alt="甜點電商" width="230px">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">首頁</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">甜點</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">登入</a>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-12">
+                <div class="index__bn_banner">
+
+                </div>
+            </div>
+        </div>
+        <div class="index_bn_itemgp">
+            <div class="index_bn_item">
+                <a href="#">
+                    <span>本日精選</span>
+                </a>
+            </div>
+            <div class="index_bn_item">
+                <a href="#">
+                    <span>人氣推薦</span>
+                </a>
+            </div>
+            <div class="index_bn_item">
+                <a href="#">
+                    <span>新品上市</span>
+                </a>
+            </div>
         </div>
     </div>
-</nav>
+</section>
+<section class="index_mainarea">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-1 mainarea01">
+                <img src="./images/title-whytodo-lg.svg">
+            </div>
+            <div class="col-12 col-lg-6 mainarea02">
+                <div class="imgbox">
+                    <img src="./images/photo-05.jpg">
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 mainarea03">
+                青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。<br><br>
+                是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
