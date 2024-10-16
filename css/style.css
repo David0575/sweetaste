@@ -56,45 +56,65 @@
 }
 
 /*主要區塊*/
-section.index_mainarea {
+section.index_mainarea01, section.index_mainarea02 {
     background-color: #EAF0ED;
     max-height: 420px;
+    margin-bottom: 105px;
 }
-section.index_mainarea .container {
-    
-}
-section.index_mainarea .container .mainarea01 {
-    order: 03;
-}
-section.index_mainarea .container .mainarea02 {
-    order: 01;
-}
-section.index_mainarea .container .mainarea03 {
-    order: 02;
-}
-section.index_mainarea .container .mainarea01 {
+section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
     margin-top: -20px;
 }
-section.index_mainarea .container .mainarea02 .imgbox {
+section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
     width: 100%;
     height: 460px;
     overflow: hidden;
     position: relative;
     margin-top: -20px;
 }
-section.index_mainarea .container .mainarea02 .imgbox img {
+section.index_mainarea01 .container .mainarea02 .imgbox img, section.index_mainarea02 .container .mainarea02 .imgbox img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
-section.index_mainarea .container .mainarea03 {
+section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
-    text-align: right;
+    text-align: left;
     font-size: 16px;
     color: #8DA291;
-    padding: 70px 0px;
+    padding: 70px 80px 70px 0px;
     height: 420px;
     line-height: 3em;
+}
+/*首頁主要區塊順序調整-第一塊*/
+section.index_mainarea01 .container .mainarea01 {
+    order: 03;
+}
+section.index_mainarea01 .container .mainarea02 {
+    order: 01;
+}
+section.index_mainarea01 .container .mainarea03 {
+    order: 02;
+}
+/*首頁主要區塊順序調整-第二塊*/
+section.index_mainarea02 .container .mainarea01 {
+    order: 02;
+}
+section.index_mainarea02 .container .mainarea02 {
+    order: 03;
+}
+section.index_mainarea02 .container .mainarea03 {
+    order: 01;
+}
+/*主要區塊三*/
+.index_mainarea03 {
+    margin-bottom: 80px;
+}
+.index_mainarea03 .col-12 {
+    text-align: center;
+}
+.index_mainarea03 .col-12 img {
+    max-width: 90px;
 }
