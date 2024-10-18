@@ -3,7 +3,22 @@ body {
 }
 
 /*主選單區*/
-
+header nav.navbar-expand-lg {
+    padding: 30px 0px;
+}
+header nav.navbar-expand-lg .navbar-nav .nav-item {
+    margin: auto 30px;
+}
+header nav.navbar-expand-lg .navbar-nav .nav-item a.nav-link {
+    font-weight: 700;
+    color: #3F5D45;
+}
+header nav.navbar-expand-lg .add_cart_btn {
+    margin-left: 30px;
+}
+header nav.navbar-expand-lg .navbar-toggler {
+    border: none;
+}
 
 /*首頁BN區*/
 .index_bn_area .index__bn_banner {
@@ -61,6 +76,29 @@ body {
 .index_bn_area .index_bn_itemgp .index_bn_item:hover a span {
     color: #3F5D45;
 }
+@media (max-width : 767px) {
+    .index_bn_area .container, .index_bn_area .container .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .index_bn_area .container .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .index_bn_area .index__bn_banner {
+        min-height: 277px;
+    }
+    .index_bn_area .index_bn_itemgp {
+        padding: 0%;
+        margin: 0px auto 80px;
+    }
+    .index_bn_area .index_bn_itemgp .index_bn_item a {
+        min-height: 180px;
+    }
+    .index_bn_area .index_bn_itemgp .index_bn_item a span {
+        font-size: 20px;
+    }
+}
 
 /*主要區塊*/
 section.index_mainarea01, section.index_mainarea02 {
@@ -103,6 +141,29 @@ section.index_mainarea01 .container .mainarea02 {
 }
 section.index_mainarea01 .container .mainarea03 {
     order: 02;
+}
+@media (max-width : 767px) {
+    section.index_mainarea01, section.index_mainarea02 {
+        background-color: #EAF0ED;
+        max-height: inherit;
+        margin-bottom: 105px;
+    }
+    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
+        margin-top: 0px;
+    }
+    section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
+        height: 250px;
+        margin-top: 0px;
+    }
+    section.index_mainarea01 .container .mainarea01 {
+        order: 01;
+    }
+    section.index_mainarea01 .container .mainarea02 {
+        order: 01;
+    }
+    section.index_mainarea01 .container .mainarea03 {
+        order: 02;
+    }
 }
 /*首頁主要區塊順序調整-第二塊*/
 section.index_mainarea02 .container .mainarea01 {
