@@ -142,29 +142,6 @@ section.index_mainarea01 .container .mainarea02 {
 section.index_mainarea01 .container .mainarea03 {
     order: 02;
 }
-@media (max-width : 767px) {
-    section.index_mainarea01, section.index_mainarea02 {
-        background-color: #EAF0ED;
-        max-height: inherit;
-        margin-bottom: 105px;
-    }
-    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
-        margin-top: 0px;
-    }
-    section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
-        height: 250px;
-        margin-top: 0px;
-    }
-    section.index_mainarea01 .container .mainarea01 {
-        order: 01;
-    }
-    section.index_mainarea01 .container .mainarea02 {
-        order: 01;
-    }
-    section.index_mainarea01 .container .mainarea03 {
-        order: 02;
-    }
-}
 /*首頁主要區塊順序調整-第二塊*/
 section.index_mainarea02 .container .mainarea01 {
     order: 02;
@@ -175,15 +152,101 @@ section.index_mainarea02 .container .mainarea02 {
 section.index_mainarea02 .container .mainarea03 {
     order: 01;
 }
+@media (max-width : 767px) {
+    section.index_mainarea01, section.index_mainarea02 {
+        max-height: none;
+        margin-bottom: 30px;
+        margin-top: 120px;
+    }
+    section.index_mainarea01 .container, section.index_mainarea01 .container .col-12, section.index_mainarea02 .container, section.index_mainarea02 .container .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    section.index_mainarea01 .container .row, section.index_mainarea02 .container .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
+        height: 250px;
+        margin-top: 0px;
+    }
+    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
+        order: 01;
+        padding: 30px;
+        text-align: center;
+        margin-top: -120px;
+    }
+    section.index_mainarea01 .container .mainarea01 img, section.index_mainarea02 .container .mainarea01 img {
+        margin: auto;
+    }
+    section.index_mainarea01 .container .mainarea02, section.index_mainarea02 .container .mainarea02 {
+        order: 02;
+    }
+    section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
+        order: 03;
+        -webkit-writing-mode: inherit;
+        writing-mode: inherit;
+        line-height: 2em;
+        padding: 30px;
+        height: inherit;
+    }
+}
+@media (max-width : 990px) {
+    section.index_mainarea01 .container .mainarea01 {
+        order: 01;
+    }
+    section.index_mainarea01 .container .mainarea02 {
+        order: 02;
+    }
+    section.index_mainarea01 .container .mainarea03 {
+        order: 03;
+    }
+    section.index_mainarea02 .container .mainarea01 {
+        order: 01;
+    }
+    section.index_mainarea02 .container .mainarea02 {
+        order: 03;
+    }
+    section.index_mainarea02 .container .mainarea03 {
+        order: 02;
+    }
+    section.index_mainarea01, section.index_mainarea02 {
+        max-height: none;
+        margin-bottom: 30px;
+        margin-top: 120px;
+    }
+    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
+        margin-top: -120px;
+    }
+    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
+        order: 01;
+        padding: 30px;
+        text-align: center;
+    }
+    section.index_mainarea01 .container .mainarea01 img, section.index_mainarea02 .container .mainarea01 img {
+        margin: auto;
+    }
+    section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
+        line-height: 2em;
+        padding: 30px 0px;
+    }
+}
 /*主要區塊三*/
 .index_mainarea03 {
     margin-bottom: 80px;
 }
-.index_mainarea03 .col-12 {
-    text-align: center;
-}
 .index_mainarea03 .col-12 img {
     max-width: 90px;
+    margin: auto;
+}
+@media (max-width : 767px) {
+    .index_mainarea03 {
+        margin-bottom: 30px;
+    }
+    .index_mainarea03 .col-12 img {
+        max-width: 226px;
+        margin: auto;
+    }
 }
 
 /*商品列表區塊*/
@@ -252,6 +315,11 @@ section.index_mainarea02 .container .mainarea03 {
     text-decoration: none;
     background-color: #EAF0ED;
 }
+@media (max-width : 767px) {
+    .owl-nav, .owl-dots {
+        display: none;
+    }
+}
 
 /*首頁電子報訂閱*/
 section.sub_edm {
@@ -277,17 +345,29 @@ section.sub_edm .input-group button.btn-outline-secondary {
     background-color: #FFE180;
     border: none;
 }
+@media (max-width : 767px) {
+    section.sub_edm .text_box {
+        padding: 0px 0px 30px;
+        text-align: center;
+    }
+}
 
 /*footer*/
 footer {
     background-color: #EAF0ED;
     padding: 30px 0px;
 }
+footer .main_area {
+    position: relative;
+}
 footer .main_area img {
     max-width: 170px;
 }
 footer .main_area .text_box {
     padding-left: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 footer .main_area .text_box a {
     display: block;
@@ -313,4 +393,29 @@ footer .copyright .btn_group a img {
 }
 footer .copyright p {
     text-align: right;
+}
+@media (max-width : 767px) {
+    footer .main_area {
+        padding: 40px 30px;
+    }
+    footer .main_area img {
+        margin-bottom: 40px;
+    }
+    footer .main_area .text_box {
+        padding-left: 0px;
+        position: relative;
+    }
+    footer .slogan {
+        display: none;
+    }
+    footer .copyright {
+        margin-top: 0px;
+        padding: 0px 30px;
+    }
+    footer .copyright .btn_group {
+        margin-bottom: 20px;
+    }
+    footer .copyright p {
+        text-align: left;
+    }
 }
