@@ -205,10 +205,10 @@ section.index_mainarea02 .container .mainarea03 {
         order: 01;
     }
     section.index_mainarea02 .container .mainarea02 {
-        order: 03;
+        order: 02;
     }
     section.index_mainarea02 .container .mainarea03 {
-        order: 02;
+        order: 03;
     }
     section.index_mainarea01, section.index_mainarea02 {
         max-height: none;
@@ -302,7 +302,6 @@ section.index_mainarea02 .container .mainarea03 {
     color: #3F5D45;
     padding: 14px 0px;
     margin: 0px;
-    vertical-align: middle;
 }
 .product_list .text_box span {
     border-left: solid 1px #EAF0ED;
@@ -321,7 +320,7 @@ section.index_mainarea02 .container .mainarea03 {
 .product_list_area.listpage .product_list {
     margin-bottom: 20px;
 }
-.product_list .img_box {
+.product_list_area.listpage .product_list .img_box {
     height: inherit;
 }
 .product_list_area.listpage .product_list .img_box img.main_img {
@@ -345,20 +344,26 @@ section.sub_edm .text_box {
     font-size: 24px;
     font-weight: 400;
     color: #EAF0ED;
+    align-items: center;
 }
 section.sub_edm .text_box img {
     width: 40px;
     margin-right: 20px;
 }
+section.sub_edm .input-group {
+    align-items: center;
+}
 section.sub_edm .input-group .input-group-text, section.sub_edm .input-group .form-control {
     border-radius: 0px;
     background-color: #EAF0ED;
     border: none;
+    padding: 16px;
 }
 section.sub_edm .input-group button.btn-outline-secondary {
     border-radius: 0px;
     background-color: #FFE180;
     border: none;
+    padding: 16px;
 }
 @media (max-width : 767px) {
     section.sub_edm .text_box {
@@ -437,9 +442,238 @@ footer .copyright p {
 
 /*產品列表頁*/
 .product_bn_area .product_bn_banner {
-    background-image: url('../images/banner.png');
+    background-image: url('../images/photo-10.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
+    text-align: right;
+}
+.product_bn_area .product_bn_banner img {
+    display: inline-block;
+    width: 90px;
+    margin: 40px;
+}
+.product_list_area .sidemenu {
+    text-align: center;
+}
+.product_list_area .sidemenu h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #EAF0ED;
+    padding: 16px 0px;
+    margin: 0px;
+    background-color: #3F5D45;
+}
+.product_list_area .sidemenu ul {
+    padding: 0px;
+    margin: 0px;
+}
+.product_list_area .sidemenu ul li {
+    list-style: none;
+    display: block;
+}
+.product_list_area .sidemenu ul li a {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    text-decoration: none;
+    padding: 16px 0px;
+    border: solid 1px #EAF0ED;
+    border-top: none;
+}
+.product_list_area .sidemenu ul li a:hover, .product_list_area .sidemenu ul li a:active {
+    background-color: #EAF0ED;
+}
+.product_list_area .navpage {
+    margin: 30px 0px 0px;
+}
+.product_list_area .navpage ul.pagination {
+    justify-content: flex-end;
+}
+.product_list_area .navpage ul.pagination a.page-link {
+    border: solid 1px #EAF0ED;
+    border-radius: 0px;
+    color: #3F5D45;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 16px 0px;
+}
+.product_list_area .navpage ul.pagination a.page-link:hover, .product_list_area .navpage ul.pagination a.page-link.active {
+    background-color: #3F5D45;
+    border: #3F5D45;
+    color: #EAF0ED;
+}
+@media (max-width : 767px) {
+    .product_bn_area .container, .product_bn_area .container .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .product_bn_area  .container .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .product_bn_area .product_bn_banner {
+        min-height: 277px;
+    }
+    .product_bn_area .product_bn_banner img {
+        width: 60px;
+        margin: 30px;
+    }
+    .product_list_area.listpage {
+        margin-top: 0px;
+    }
+    .product_list_area .sidemenu {
+        margin: 0px -12px 30px;
+    }
+    .product_list_area .navpage ul.pagination {
+        justify-content: center;
+    }
+}
+
+/*會員登入頁*/
+section.login {
+    margin: 60px auto;
+}
+section.login .col-12 {
+    display: flex;
+}
+section.login .loginbox1, section.login .loginbox2 {
+    flex: auto;
+}
+section.login .loginbox1 {
+    padding: 40px 30px;
+    background-color: #EAF0ED;
+    order: 2;
+}
+section.login .loginbox1 h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #8DA291;
+    padding: 0px;
+    margin-bottom: 36px;
+}
+section.login .loginbox1 ul {
+    margin: 0px;
+    padding: 0px;
+}
+section.login .loginbox1 li {
+    list-style: none;
+}
+section.login .loginbox1 li a {
+    display: block;
+    background-color: #FFF;
+    text-align: center;
+    padding: 16px 0px;
+    margin-bottom: 16px;
+}
+section.login .loginbox1 li a img {
+    width: 110px;
+}
+section.login .loginbox2 {
+    padding: 40px 0px 0px;
+    background-color: #3F5D45;
+    order: 1;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    position: relative;
+}
+section.login .loginbox2 .inputarea {
+    padding: 0px 30px 0px;
+}
+section.login .loginbox2 h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #EAF0ED;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 40px;
+}
+section.login .loginbox2 .input-group .input-group-text, section.login .loginbox2 .input-group .form-control {
+    border-radius: 0px;
+    background-color: #EAF0ED;
+    border: none;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+section.login .loginbox2 .form-check {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #EAF0ED;
+}
+section.login .loginbox2 .form-check .form-check-input {
+    background-color: #EAF0ED;
+    border: none;
+    border-radius: 0px;
+}
+section.login .loginbox2 button.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #FFE180;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width : 767px) {
+    section.login {
+        margin: 0px;
+    }
+    section.login .container, section.login .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    section.login .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section.login .col-12 {
+        flex-direction: column;
+    }
+    section.login .loginxstitle, section.login .loginbox1, section.login .loginbox2 {
+        flex: none;
+    }
+    section.login .loginxstitle h1 {
+        order: 1;
+        font-size: 36px;
+        font-weight: 700;
+        color: #EAF0ED;
+        text-align: center;
+        margin: 0px;
+        padding: 30px 0px;
+        background-color: #3F5D45;
+    }
+    section.login .loginbox1 {
+        order: 2;
+    }
+    section.login .loginbox1 ul {
+        display: flex;
+    }
+    section.login .loginbox1 li {
+        flex: auto;
+    }
+    section.login .loginbox1 li a {
+        margin-right: 1px;
+    }
+    section.login .loginbox1 li:nth-last-child() a {
+        margin-right: 0px;
+    }
+    section.login .loginbox1 li a img {
+        max-width: 80px;
+        max-height: 16px;
+    }
+    section.login .loginbox2 {
+        order: 3;
+    }
+    section.login .loginbox2 button.btn-primary {
+        position:relative;
+    }
 }
