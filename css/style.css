@@ -677,3 +677,56 @@ section.login .loginbox2 button.btn-primary {
         position:relative;
     }
 }
+
+/*購物車*/
+section.cart {
+    margin: 60px auto;
+}
+section.cart h1 {
+    background-color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3F5D45;
+    text-align: center;
+    padding: 16px 0px;
+    margin: 0px auto 30px;
+}
+section.cart .cart_list ul {
+    margin: 0px;
+    padding: 0px;
+}
+section.cart .cart_list ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+section.cart .cart_list ul li .img_box, section.cart .cart_list ul li .text_box, section.cart .cart_list ul li .input-group, section.cart .cart_list ul li .price_box, section.cart .cart_list ul li .del_box {
+    margin-right: 40px;
+    flex: 1 0 auto;
+}
+section.cart .cart_list ul li .img_box {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+}
+section.cart .cart_list ul li .img_box img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+section.cart .cart_list ul li .input-group {
+    max-width: 150px;
+}
+section.cart .cart_list ul li .input-group .btn, section.cart .cart_list ul li .input-group .form-control {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    border: solid 1px #EAF0ED;
+    border-radius: 0;
+}
+section.cart .cart_list ul li .del_box {
+    margin-right: 0px;
+}
