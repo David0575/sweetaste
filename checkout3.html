@@ -3,9 +3,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>結帳－運送資訊－甜點電商｜18th前端組梓航</title>
+<title>結帳－發票－甜點電商｜18th前端組梓航</title>
 <meta name="description" content="">
-<meta property="og:title" content="結帳－運送資訊－甜點電商｜18th前端組梓航" />
+<meta property="og:title" content="結帳－發票－甜點電商｜18th前端組梓航" />
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <meta property="og:image" content="">
@@ -56,63 +56,78 @@
                     <div class="text_box">
                         <div class="tltle_box">
                             <div class="title">
-                                運送
+                                發票
                             </div>
                             <div class="timeline">
                                 <div class="circle-wrapper">
                                     <div class="circle active"></div>
-                                    
                                 </div>
                                 <div class="circle-wrapper">
-                                    <div class="circle"></div>
+                                    <div class="circle active"></div>
                                     <div class="line"></div>
                                 </div>
                                 <div class="circle-wrapper">
-                                    <div class="circle"></div>
+                                    <div class="circle active"></div>
                                     <div class="line"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="input_box row">
-                            <div class="col-6">
-                                <label for="checkout_surname" class="form-label">姓氏</label>
-                                <input type="text" class="form-control" id="checkout_surname" placeholder="王">
-                            </div>
-                            <div class="col-6">
-                                <label for="checkout_name" class="form-label">名字</label>
-                                <input type="text" class="form-control" id="checkout_name" placeholder="小明">
-                            </div>
-                            <div class="col-12">
-                                <label for="checkout_phone" class="form-label">電話</label>
-                                <input type="text" class="form-control" id="checkout_name" placeholder="0912-345-678">
-                            </div>
-                            <div class="col-12">
-                                <label for="checkout_address" class="form-label">地址</label>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <select class="form-select">
-                                            <option selected>高雄市</option>
-                                            <option value="1">台北市</option>
-                                            <option value="2">台中市</option>
-                                            <option value="3">台南市</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6">
-                                        <select class="form-select">
-                                            <option selected>新興區</option>
-                                            <option value="1">鼓山區</option>
-                                            <option value="2">三民區</option>
-                                            <option value="3">左營區</option>
-                                        </select>
+                        <ul class="nav nav-pills" id="invoice-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#electronic" type="button" role="tab" aria-controls="pills-home" aria-selected="true">電子發票</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#mail" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">郵寄發票</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="invoice-tabContent">
+                            <div class="tab-pane fade show active" id="electronic" role="tabpanel" aria-labelledby="Electronic-tab">
+                                <div class="input_box row">
+                                    <div class="col-12">
+                                        <label for="checkout_mail" class="form-label">電子郵件信箱</label>
+                                        <input type="text" class="form-control" id="checkout_mail" placeholder="example@email.com">
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" class="form-control" id="checkout_address" placeholder="幸福路 520 號">
+                                        <label for="checkout_taxid" class="form-label">統一編號（選填）</label>
+                                        <input type="text" class="form-control" id="checkout_taxid" placeholder="12345678">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail">
+                                <div class="input_box row">
+                                    <div class="col-12">
+                                        <label for="checkout_address" class="form-label">地址</label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select class="form-select">
+                                                    <option selected>高雄市</option>
+                                                    <option value="1">台北市</option>
+                                                    <option value="2">台中市</option>
+                                                    <option value="3">台南市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <select class="form-select">
+                                                    <option selected>新興區</option>
+                                                    <option value="1">鼓山區</option>
+                                                    <option value="2">三民區</option>
+                                                    <option value="3">左營區</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="checkout_address" placeholder="幸福路 520 號">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="checkout_taxid" class="form-label">統一編號（選填）</label>
+                                        <input type="text" class="form-control" id="checkout_taxid" placeholder="12345678">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="checkout2.html">下一步</a>
+                    <a href="checkoutsuccess.html">下一步</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 d-none d-md-block">

@@ -3,9 +3,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>結帳－運送資訊－甜點電商｜18th前端組梓航</title>
+<title>結帳－付款－甜點電商｜18th前端組梓航</title>
 <meta name="description" content="">
-<meta property="og:title" content="結帳－運送資訊－甜點電商｜18th前端組梓航" />
+<meta property="og:title" content="結帳－付款－甜點電商｜18th前端組梓航" />
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <meta property="og:image" content="">
@@ -56,7 +56,7 @@
                     <div class="text_box">
                         <div class="tltle_box">
                             <div class="title">
-                                運送
+                                付款
                             </div>
                             <div class="timeline">
                                 <div class="circle-wrapper">
@@ -64,7 +64,7 @@
                                     
                                 </div>
                                 <div class="circle-wrapper">
-                                    <div class="circle"></div>
+                                    <div class="circle active"></div>
                                     <div class="line"></div>
                                 </div>
                                 <div class="circle-wrapper">
@@ -74,8 +74,15 @@
                             </div>
                         </div>
                         <div class="input_box row">
+                            <div class="col-12">
+                                <label for="checkout_cardid" class="form-label">信用卡卡號</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="checkout_cardid" placeholder="9012-3456-7890-1234">
+                                    <span class="input-group-text"><img src="./images/credit_card.svg"></span>
+                                </div>
+                            </div>
                             <div class="col-6">
-                                <label for="checkout_surname" class="form-label">姓氏</label>
+                                <label for="checkout_surname" class="form-label">持卡人姓名</label>
                                 <input type="text" class="form-control" id="checkout_surname" placeholder="王">
                             </div>
                             <div class="col-6">
@@ -83,36 +90,42 @@
                                 <input type="text" class="form-control" id="checkout_name" placeholder="小明">
                             </div>
                             <div class="col-12">
-                                <label for="checkout_phone" class="form-label">電話</label>
-                                <input type="text" class="form-control" id="checkout_name" placeholder="0912-345-678">
-                            </div>
-                            <div class="col-12">
-                                <label for="checkout_address" class="form-label">地址</label>
+                                <label for="checkout_validity" class="form-label">有效期限</label>
                                 <div class="row">
                                     <div class="col-6">
                                         <select class="form-select">
-                                            <option selected>高雄市</option>
-                                            <option value="1">台北市</option>
-                                            <option value="2">台中市</option>
-                                            <option value="3">台南市</option>
+                                            <option selected>月</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="3">04</option>
+                                            <option value="3">05</option>
+                                            <option value="3">06</option>
+                                            <option value="3">07</option>
+                                            <option value="3">08</option>
+                                            <option value="3">09</option>
+                                            <option value="3">10</option>
+                                            <option value="3">11</option>
+                                            <option value="3">12</option>
                                         </select>
                                     </div>
                                     <div class="col-6">
                                         <select class="form-select">
-                                            <option selected>新興區</option>
-                                            <option value="1">鼓山區</option>
-                                            <option value="2">三民區</option>
-                                            <option value="3">左營區</option>
+                                            <option selected>年</option>
+                                            <option value="1">2024</option>
+                                            <option value="2">2025</option>
+                                            <option value="3">2026</option>
                                         </select>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" id="checkout_address" placeholder="幸福路 520 號">
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-6">
+                                <label for="checkout_lastthree" class="form-label">背面末三碼</label>
+                                <input type="text" class="form-control" id="checkout_lastthree" placeholder="123">
+                            </div>
                         </div>
                     </div>
-                    <a href="checkout2.html">下一步</a>
+                    <a href="checkout3.html">下一步</a>
                 </div>
             </div>
             <div class="col-12 col-md-4 d-none d-md-block">

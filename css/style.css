@@ -152,45 +152,6 @@ section.index_mainarea02 .container .mainarea02 {
 section.index_mainarea02 .container .mainarea03 {
     order: 01;
 }
-@media (max-width : 767px) {
-    section.index_mainarea01, section.index_mainarea02 {
-        max-height: none;
-        margin-bottom: 30px;
-        margin-top: 120px;
-    }
-    section.index_mainarea01 .container, section.index_mainarea01 .container .col-12, section.index_mainarea02 .container, section.index_mainarea02 .container .col-12 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    section.index_mainarea01 .container .row, section.index_mainarea02 .container .row {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
-        height: 250px;
-        margin-top: 0px;
-    }
-    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
-        order: 01;
-        padding: 30px;
-        text-align: center;
-        margin-top: -120px;
-    }
-    section.index_mainarea01 .container .mainarea01 img, section.index_mainarea02 .container .mainarea01 img {
-        margin: auto;
-    }
-    section.index_mainarea01 .container .mainarea02, section.index_mainarea02 .container .mainarea02 {
-        order: 02;
-    }
-    section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
-        order: 03;
-        -webkit-writing-mode: inherit;
-        writing-mode: inherit;
-        line-height: 2em;
-        padding: 30px;
-        height: inherit;
-    }
-}
 @media (max-width : 990px) {
     section.index_mainarea01 .container .mainarea01 {
         order: 01;
@@ -231,6 +192,46 @@ section.index_mainarea02 .container .mainarea03 {
         padding: 30px 0px;
     }
 }
+@media (max-width : 767px) {
+    section.index_mainarea01, section.index_mainarea02 {
+        max-height: none;
+        margin-bottom: 30px;
+        margin-top: 120px;
+    }
+    section.index_mainarea01 .container, section.index_mainarea01 .container .col-12, section.index_mainarea02 .container, section.index_mainarea02 .container .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    section.index_mainarea01 .container .row, section.index_mainarea02 .container .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section.index_mainarea01 .container .mainarea02 .imgbox, section.index_mainarea02 .container .mainarea02 .imgbox {
+        height: 250px;
+        margin-top: 0px;
+    }
+    section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
+        order: 01;
+        padding: 30px;
+        text-align: center;
+        margin-top: -120px;
+    }
+    section.index_mainarea01 .container .mainarea01 img, section.index_mainarea02 .container .mainarea01 img {
+        margin: auto;
+    }
+    section.index_mainarea01 .container .mainarea02, section.index_mainarea02 .container .mainarea02 {
+        order: 02;
+    }
+    section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
+        order: 03;
+        -webkit-writing-mode: inherit;
+        writing-mode: inherit;
+        line-height: 2em;
+        padding: 30px;
+        height: inherit;
+    }
+}
+
 /*主要區塊三*/
 .index_mainarea03 {
     margin-bottom: 80px;
@@ -835,4 +836,196 @@ section.checkout {
 }
 section.checkout .main_area {
     background-color: #3F5D45;
+}
+section.checkout .main_area .text_box {
+    padding: 30px 40px;
+}
+section.checkout .main_area .text_box .tltle_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+section.checkout .main_area .text_box .tltle_box .title, section.checkout .main_area .text_box .tltle_box .timeline {
+    flex: auto;
+}
+section.checkout .main_area .text_box .tltle_box .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #EAF0ED;
+}
+section.checkout .main_area a {
+    display: block; 
+    background-color: #FFE180;
+    padding: 16px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3F5D45;
+}
+section.checkout .main_area .text_box .tltle_box .timeline {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #3F5D45;
+    position: relative;
+}
+section.checkout .main_area .text_box .tltle_box .circle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    position: relative;
+}
+section.checkout .main_area .text_box .tltle_box .circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #EAF0ED;
+    border-radius: 50%;
+    background-color: #3F5D45;
+    z-index: 2;
+}
+section.checkout .main_area .text_box .tltle_box .circle.active {
+    background-color: transparent;
+}
+section.checkout .main_area .text_box .tltle_box .circle.active::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #EAF0ED;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.checkout .main_area .text_box .tltle_box .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #EAF0ED;
+    z-index: 1;
+}
+section.checkout .main_area .text_box .tltle_box .circle-wrapper:first-child .line {
+    left: 20px;
+}
+section.checkout .main_area .text_box .input_box label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #EAF0ED;
+}
+section.checkout .main_area .text_box .input_box .form-control, section.checkout .main_area .text_box .input_box .form-select,  section.checkout .main_area .text_box .input_box .input-group-text {
+    background-color: #EAF0ED;
+    border: none;
+    border-radius: 0px;
+    padding: 17px 20px;
+    margin-bottom: 16px;
+}
+section.checkout .main_area .text_box .input_box .form-select {
+    margin-bottom: 8px;
+}
+section.checkout .orderinfo_box, section.checkout .orderlist_box {
+    border: solid 1px #EAF0ED;
+}
+section.checkout .orderinfo_box {
+    margin-bottom: 20px;
+}
+section.checkout .orderinfo_box .title, section.checkout .orderlist_box .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #8DA291;
+    text-align: center;
+    background-color: #EAF0ED;
+    padding: 16px 0px;
+    margin-bottom: 16px;
+}
+section.checkout .orderinfo_box .price_box {
+    margin-bottom: 8px;
+    padding: 0px 20px;
+    display: flex;
+    color: #8DA291;
+}
+section.checkout .orderinfo_box .price_box span {
+    flex: auto;
+}
+section.checkout .orderinfo_box .price_box span.price {
+    text-align: right;
+}
+section.checkout .orderinfo_box .price_box.total {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+section.checkout .orderlist_box ul {
+    margin: 0px;
+    padding: 0px;
+}
+section.checkout .orderlist_box ul li {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 16px;
+    display: flex;
+}
+section.checkout .orderlist_box ul li div {
+    flex: auto;
+}
+section.checkout .orderlist_box ul li .img_box {
+    max-width: 120px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+section.checkout .orderlist_box ul li .img_box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+section.checkout .orderlist_box ul li .product_info {
+    color: #8DA291;
+}
+section.checkout .orderlist_box ul li .product_info span {
+    display: block;
+}
+section.checkout .orderlist_box ul li .product_info span.price {
+    font-size: 20px;
+    font-weight: 700;
+}
+section.checkout ul.nav.nav-pills li.nav-item {
+    flex: auto;
+    margin-bottom: 30px;
+}
+section.checkout ul.nav.nav-pills li.nav-item button.nav-link {
+    width: 100%;
+    text-align: center;
+    border: solid 1px #EAF0ED;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #EAF0ED;
+    padding: 16px 0px;
+}
+section.checkout ul.nav.nav-pills li.nav-item button.nav-link.active {
+    color: #3F5D45;
+    background-color: #EAF0ED;
+}
+@media (max-width : 767px) {
+    section.checkout {
+        margin: 0px auto;
+    }
+    section.checkout .main_area {
+        margin: 0px -12px;
+    }
+    section.checkout .main_area .text_box {
+        padding: 30px;
+    }
 }
