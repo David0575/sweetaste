@@ -152,24 +152,33 @@ section.index_mainarea02 .container .mainarea02 {
 section.index_mainarea02 .container .mainarea03 {
     order: 01;
 }
+@media (max-width : 1199px) {
+    section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
+        line-height: 2em;
+    }
+}
 @media (max-width : 990px) {
     section.index_mainarea01 .container .mainarea01 {
         order: 01;
     }
     section.index_mainarea01 .container .mainarea02 {
         order: 02;
+        flex: auto;
     }
     section.index_mainarea01 .container .mainarea03 {
         order: 03;
+        flex: auto;
     }
     section.index_mainarea02 .container .mainarea01 {
         order: 01;
     }
     section.index_mainarea02 .container .mainarea02 {
-        order: 02;
+        order: 03;
+        flex: auto;
     }
     section.index_mainarea02 .container .mainarea03 {
-        order: 03;
+        order: 02;
+        flex: auto;
     }
     section.index_mainarea01, section.index_mainarea02 {
         max-height: none;
@@ -189,7 +198,7 @@ section.index_mainarea02 .container .mainarea03 {
     }
     section.index_mainarea01 .container .mainarea03, section.index_mainarea02 .container .mainarea03 {
         line-height: 2em;
-        padding: 30px 0px;
+        padding: 30px;
     }
 }
 @media (max-width : 767px) {
@@ -330,7 +339,7 @@ section.index_mainarea02 .container .mainarea03 {
     left: auto;
     transform: none;
 }
-@media (max-width : 767px) {
+@media (max-width : 991px) {
     .owl-nav, .owl-dots {
         display: none;
     }
@@ -365,6 +374,11 @@ section.sub_edm .input-group button.btn-outline-secondary {
     background-color: #FFE180;
     border: none;
     padding: 16px;
+}
+@media (max-width : 991px) {
+    section.sub_edm .text_box img {
+        margin-right: 16px;
+    }
 }
 @media (max-width : 767px) {
     section.sub_edm .text_box {
@@ -886,6 +900,12 @@ section.checkout .main_area .text_box .tltle_box .circle {
     background-color: #3F5D45;
     z-index: 2;
 }
+section.checkout .main_area .text_box .tltle_box .circle img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+}
 section.checkout .main_area .text_box .tltle_box .circle.active {
     background-color: transparent;
 }
@@ -1018,14 +1038,104 @@ section.checkout ul.nav.nav-pills li.nav-item button.nav-link.active {
     color: #3F5D45;
     background-color: #EAF0ED;
 }
+section.checkout .order_ok_box {
+    background-image: url('../images/photo-14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 120px 0px;
+}
+section.checkout .order_ok_box .timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+section.checkout .order_ok_box .circle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+}
+section.checkout .order_ok_box .circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3F5D45;
+    border-radius: 50%;
+    background-color: #3F5D45;
+    z-index: 2;
+}
+section.checkout .order_ok_box .circle img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+}
+section.checkout .order_ok_box .circle.active {
+    background-color: transparent;
+}
+section.checkout .order_ok_box .circle.active::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #3F5D45;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.checkout .order_ok_box .line {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: 0%;
+    height: 1px;
+    background-color: #3F5D45;
+    z-index: 1;
+}
+section.checkout .order_ok_box .circle-wrapper:first-child .line {
+    left: 50%;
+    right: 0%;
+}
+section.checkout .order_ok_box .circle-wrapper:nth-child(3) .line {
+    left: 0%;
+    right: 50%;
+}
+section.checkout .order_ok_box .title {
+    margin: 30px auto 50px;
+    text-align: center;
+}
+section.checkout .order_ok_box .title img {
+    max-width: 190px;
+}
+section.checkout .order_ok_box a {
+    display: block; 
+    background-color: #FFE180;
+    padding: 16px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3F5D45;
+}
 @media (max-width : 767px) {
     section.checkout {
         margin: 0px auto;
     }
-    section.checkout .main_area {
+    section.checkout .main_area, section.checkout .order_ok_box {
         margin: 0px -12px;
     }
     section.checkout .main_area .text_box {
         padding: 30px;
+    }
+    section.checkout .order_ok_box .title {
+        margin: 30px auto 210px;
+    }
+    section.checkout .order_ok_box {
+        padding: 210px 0px 0px;
     }
 }
