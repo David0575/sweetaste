@@ -181,9 +181,8 @@ section.index_mainarea02 .container .mainarea03 {
         flex: auto;
     }
     section.index_mainarea01, section.index_mainarea02 {
-        max-height: none;
-        margin-bottom: 30px;
-        margin-top: 120px;
+        margin-bottom: 50px;
+        margin-top: 150px;
     }
     section.index_mainarea01 .container .mainarea01, section.index_mainarea02 .container .mainarea01 {
         margin-top: -120px;
@@ -471,6 +470,7 @@ footer .copyright p {
 }
 .product_list_area .sidemenu {
     text-align: center;
+    margin-bottom: 30px;
 }
 .product_list_area .sidemenu h4 {
     font-size: 24px;
@@ -522,6 +522,11 @@ footer .copyright p {
     border: #3F5D45;
     color: #EAF0ED;
 }
+@media (max-width : 990px) {
+    .product_list_area .navpage ul.pagination {
+        justify-content: center;
+    }
+}
 @media (max-width : 767px) {
     .product_bn_area .container, .product_bn_area .container .col-12 {
         padding-left: 0px;
@@ -543,9 +548,6 @@ footer .copyright p {
     }
     .product_list_area .sidemenu {
         margin: 0px -12px 30px;
-    }
-    .product_list_area .navpage ul.pagination {
-        justify-content: center;
     }
 }
 
@@ -754,6 +756,9 @@ section.cart .cart_list ul li .price_box {
     font-size: 20px;
     font-weight: 700;
 }
+section.cart .cart_list ul li .del_box button {
+    padding: 0px;
+}
 section.cart .orderinfo_box {
     background-color: #3F5D45;
 }
@@ -799,6 +804,12 @@ section.cart .orderinfo_box a {
     font-weight: 700;
     text-decoration: none;
     color: #3F5D45;
+}
+@media (max-width : 990px) {
+    section.cart .cart_list ul li .input-group .btn, section.cart .cart_list ul li .input-group .form-control {
+        width: 30px;
+        flex: 1 0 auto;
+    }
 }
 @media (max-width : 767px) {
     section.cart {
@@ -1131,6 +1142,9 @@ section.checkout .order_ok_box a {
     }
     section.checkout .main_area .text_box {
         padding: 30px;
+    }
+    section.checkout .order_ok_box .timeline {
+        max-width: 190px;
     }
     section.checkout .order_ok_box .title {
         margin: 30px auto 210px;
