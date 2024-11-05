@@ -980,6 +980,20 @@ section.checkout .main_area .text_box .input_box .form-control, section.checkout
     padding: 17px 20px;
     margin-bottom: 16px;
 }
+section.checkout .main_area .text_box .input_box .form-check {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #EAF0ED;
+    align-self: flex-end;
+}
+section.checkout .main_area .text_box .input_box .form-check label {
+    font-size: 16px;
+}
+section.checkout .main_area .text_box .input_box .form-check .form-check-input {
+    background-color: #EAF0ED;
+    border: none;
+    border-radius: 0px;
+}
 section.checkout .main_area .text_box .input_box .form-select {
     margin-bottom: 8px;
 }
